@@ -1,0 +1,33 @@
+grammar org.learning.example.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.learning.org/example/MyDsl"
+
+CompilationUnit:
+	type+=TypeDeclaration*;
+	
+TypeDeclaration:
+	kind=TypeKinds name=ID
+	'{'
+		elements+= NamedElement*
+	'}'
+;
+
+enum TypeKinds: 
+	INTERFACE = 'interface' | CLASS = 'class'
+;
+
+NamedElement: 
+	 Attribute | Method
+;
+
+Attribute returns NamedElement:
+	type = [TypeDeclaration] name = ID
+;
+
+Method returns NamedElement:
+	type = [TypeDeclaration] name = ID '(' ')' '=' Expression
+;
+
+Expression: 
+	STRING '+' STRING
+;

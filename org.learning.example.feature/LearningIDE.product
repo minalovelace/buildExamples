@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Learning IDE" uid="product" id="org.learning.example.ide.product" application="org.eclipse.ui.ide.workbench" version="1.0.0" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.learning.example.feature" version="1.0.0.qualifier"/>
+      <feature id="org.eclipse.e4.rcp" version="1.5.2.v20161122-1740"/>
+      <feature id="org.eclipse.platform" version="4.6.2.v20161124-1529"/>
+      <feature id="org.eclipse.jdt" version="3.12.2.v20161124-1400"/>
+      <feature id="org.eclipse.pde" version="3.12.2.v20161124-1400"/>
+      <feature id="org.eclipse.emf.ecore"/>
+      <feature id="org.eclipse.emf.common.ui" version="2.11.0.v20160526-0356"/>
+      <feature id="org.eclipse.emf.edit" version="2.12.0.v20160526-0356"/>
+      <feature id="org.eclipse.emf.ecore.edit" version="2.9.0.v20160526-0356"/>
+      <feature id="org.eclipse.emf.edit.ui" version="2.12.0.v20160526-0356"/>
+      <feature id="org.eclipse.emf.ecore.editor" version="2.12.0.v20160526-0356"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient4.feature"/>
+      <feature id="org.eclipse.help"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature"/>
+      <feature id="org.eclipse.equinox.p2.extras.feature"/>
+      <feature id="org.eclipse.emf.common"/>
+      <feature id="org.eclipse.rcp"/>
+      <feature id="org.eclipse.equinox.p2.core.feature"/>
+      <feature id="org.eclipse.ecf.core.feature"/>
+      <feature id="org.eclipse.equinox.p2.rcp.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.feature"/>
+      <feature id="org.eclipse.ecf.core.ssl.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.ssl.feature"/>
+      <feature id="org.eclipse.xtext.runtime" version="2.11.0.v20170201-0242"/>
+      <feature id="org.eclipse.xtext.redist" version="2.11.0.v20170201-0242"/>
+      <feature id="org.eclipse.xtext.ui" version="2.11.0.v20170201-0242"/>
+      <feature id="org.eclipse.xtend.sdk" version="2.11.0.v20170201-0242"/>
+      <feature id="org.eclipse.emf.codegen.ecore" version="2.12.0.v20160526-0356"/>
+      <feature id="org.eclipse.emf.codegen" version="2.11.0.v20160526-0356"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>
